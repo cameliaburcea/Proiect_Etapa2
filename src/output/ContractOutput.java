@@ -28,12 +28,4 @@ public final class ContractOutput {
     public int getRemainedContractMonths() {
         return remainedContractMonths;
     }
-
-    @Override
-    public String toString() {
-        return "ConsumerId: " + consumerId + " | "
-                + "Price: " + price +  " | "
-                + "RemaninedContractMOnths: " + remainedContractMonths;
-
-    }
 }

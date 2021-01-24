@@ -11,17 +11,6 @@ public final class DistributorOutput implements Entity {
     private boolean isBankrupt;
     private List<ContractOutput> contracts;
 
-    @Override
-    public String toString() {
-        return "Id: " + id + " | "
-                + "EnergyNeededKW: " + energyNeededKW +  " | "
-                + "ContractCost: " + contractCost + " | "
-                + "Budget: " + budget + " | "
-                + "ProducerStrategy: " + producerStrategy + " | "
-                + "IsBankrupt: " + isBankrupt + " | "
-                + "Contracts: " + contracts;
-    }
-
     public int getEnergyNeededKW() {
         return energyNeededKW;
     }

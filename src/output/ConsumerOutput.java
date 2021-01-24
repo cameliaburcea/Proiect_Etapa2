@@ -28,11 +28,4 @@ public final class ConsumerOutput implements Entity {
     public int getBudget() {
         return budget;
     }
-
-    @Override
-    public String toString() {
-        return "Id: " + id + " | "
-                + "IsBankrupt: " + isBankrupt + " | "
-                + "Budget: " + budget;
-    }
 }
