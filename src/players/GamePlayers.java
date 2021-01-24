@@ -51,9 +51,4 @@ public abstract class GamePlayers {
         isBankrupt = bankrupt;
     }
 
-    /**
-     * computes current budget for every entity
-     * @return the current budget
-     */
-    abstract double computeCurrentBudget();
 }

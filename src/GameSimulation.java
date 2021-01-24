@@ -144,7 +144,7 @@ public final class GameSimulation {
                 c.removeBankruptConsumer(distributors);
             }
 
-            Distributor.filterBankruptDistributors(distributors, bankruptDistributors);
+//            Distributor.filterBankruptDistributors(distributors, bankruptDistributors);
             distributors.sort(Comparator.comparing(Distributor::getId));
 
             /* if a consumer is bankrupt, remove them from the distributor
