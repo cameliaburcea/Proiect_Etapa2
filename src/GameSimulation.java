@@ -124,7 +124,8 @@ public final class GameSimulation {
                 distributor.payMonthlyCosts();
             }
 
-
+            /* middle of the month */
+            /* update the producers costs */
             for (Producer producer : producers) {
                 for (ProducerChanges producerChanges : updates.getProducerChanges()) {
                     if (producer.getId() == producerChanges.getId()) {
@@ -146,7 +147,9 @@ public final class GameSimulation {
             Distributor.filterBankruptDistributors(distributors, bankruptDistributors);
             distributors.sort(Comparator.comparing(Distributor::getId));
 
-
+            /* if a consumer is bankrupt, remove them from the distributor
+             * and contracts' lists of consumers
+             */
             Consumer.filterBankruptConsumers(consumers, bankruptConsumers);
             Distributor.filterBankruptDistributors(distributors, bankruptDistributors);
 
